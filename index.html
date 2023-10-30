@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Ngawi &bullet; Fostifest Web Design 2023</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Core Style -->
+    <link
+      rel="stylesheet"
+      href="./style/bootstrap-core/css/bootstrap.min.css"
+    />
+    <script
+      src="./style/bootstrap-core/js/bootstrap.bundle.min.js"
+      defer
+      async
+    ></script>
+
+    <!-- Other Styling -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./style/style.js" defer async></script>
+  </head>
+  <body>
+    <!-- Main Navbar Start -->
+    <nav class="container fixed-top" aria-label="Offcanvas navbar large">
+      <div class="navbar navbar-expand-md navbar-light" id="main-navbar">
+        <a class="navbar-brand" href="/">
+          <img src="./image/logo-main.png" alt="Explore Ngawi" height="36" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-light"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img
+                src="./image/logo-main.png"
+                alt="Explore Ngawi"
+                height="36px"
+              />
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-dark"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#history">Sejarah</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#featured">Keunggulan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#destination">Tujuan Wisata</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Main Navbar End -->
+
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#main-navbar"
+      data-bs-offset="0"
+      class="scrollspy-example"
+      tabindex="0"
+    >
+      <!-- Header Start -->
+      <header id="home" class="masthead">
+        <div class="dot-animation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <img src="./image/circle-half.png" class="circle-half" />
+        <img src="./image/circle-half.png" class="circle-half" />
+
+        <div class="container">
+          <div class="row flex-md-row flex-column-reverse">
+            <div class="col-md-5 mt-4 mt-md-0 text-center text-md-start">
+              <h1 class="title">Ngawi Ramah Yang Bikin Kamu Kangen</h1>
+              <p class="desc">
+                Yuk datang ke Kabupaten Ngawi yang mana terdapat berbagai tempat
+                wisata dan penduduk yang sangat ramah, bikin kamu kangen dan
+                pengen balik dolan lagi ke Ngawi.
+              </p>
+
+              <button
+                onclick="scrollToTarget('#history')"
+                class="btn btn-lg btn-primary"
+              >
+                Jelajahi Tempat Wisata
+              </button>
+            </div>
+            <div class="col-md-6">
+              <div class="image-featured">
+                <img
+                  src="./image/assets-header/main-featured-fort-van-den-bosch.png"
+                  alt="Benteng Pendem Ngawi"
+                  class="main-featured"
+                />
+                <img
+                  src="./image/assets-header/featured-jamus.png"
+                  alt="Kebun Teh Jamus Ngawi"
+                  class="featured"
+                />
+                <img
+                  src="./image/assets-header/featured-srambang.png"
+                  alt="Srambang Park"
+                  class="featured"
+                />
+                <img
+                  src="./image/assets-header/featured-trinil.png"
+                  alt="Museum Trinil"
+                  class="featured"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Header End -->
+
+      <!-- Section History Start -->
+      <section id="history" class="need-space bg-body-secondary">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <img
+                src="./image/about.png"
+                class="rounded-4 w-100"
+                alt="Foto Kartonyono Medot Janji"
+              />
+            </div>
+            <div class="col-md-6 mt-3 mt-md-0 text-center text-md-start">
+              <h3>Sejarah Kabupaten Ngawi</h3>
+              <p>
+                Ngawi berasal dari kata “AWI” yang artinya bambu yang
+                selanjutnya mendapat tambahan huruf sengau “Ng” menjadi “NGAWI”
+                . Seperti halnya dengan nama-nama di daerah-daerah lain yang
+                banyak sekali nama-nama tempat (desa) yang di kaitkan dengan
+                nama tumbuh-tumbuhan. Seperti Ngawi menunjukkan suatu tempat
+                yang di sekitar pinggir Bengawan Solo dan Bengawan Madiun yang
+                banyak ditumbuhi bambu.
+              </p>
+              <cite
+                ><a
+                  class="text-decoration-none text-dark"
+                  href="https://ngawikab.go.id/sejarah/"
+                  >Website Resmi Pemerintah Kabupaten Ngawi</a
+                ></cite
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section History End -->
+
+      <!-- Section Featured Start -->
+      <section id="featured" class="need-space bg-primary text-white">
+        <div class="container">
+          <div class="text-center w-100 w-md-50 mx-auto">
+            <h3 class="h1">Pelayanan Terbaik</h3>
+            <p class="fs-5 opacity-75">
+              Beberapa keuntungan apabila kamu berkunjung ke kota Ngawi.
+            </p>
+          </div>
+
+          <div class="row pt-5">
+            <div class="col-md-3 col-6 mb-3">
+              <div class="d-flex flex-column gap-2 text-center">
+                <div class="p-3 bg-white rounded-4 mx-auto" style="height: 5rem; width: 5rem;--bs-bg-opacity: .5;">
+                  <img src="./image/feature/humility.png" alt="Penduduk Ramah" class="w-100" />
+                </div>
+                <p class="fw-bold fs-5 mb-0 mx-auto">Pelayanan Ramah</p>
+                <p>Pelayanan ramah untuk kamu yang baru saja datang dan bersinggah di Kabupaten Ngawi yang membuat kamu semakin kangen dan ingin kembali lagi.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+              <div class="d-flex flex-column gap-2 text-center">
+                <div class="p-3 bg-white rounded-4 mx-auto" style="height: 5rem; width: 5rem;--bs-bg-opacity: .5;">
+                  <img src="./image/feature/wallet.png" alt="Harga Murah" class="w-100" />
+                </div>
+                <p class="fw-bold fs-5 mb-0 mx-auto">Harga Tiket Masuk Yang Murah</p>
+                <p>Kami akan selalu memastikan bahwa harga tiket masuk ke destinasi wisata yang ada di Ngawi selalu murah.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+              <div class="d-flex flex-column gap-2 text-center">
+                <div class="p-3 bg-white rounded-4 mx-auto" style="height: 5rem; width: 5rem;--bs-bg-opacity: .5;">
+                  <img src="./image/feature/destination.png" alt="Tempat Yang Mudah Dijangkau" class="w-100" />
+                </div>
+                <p class="fw-bold fs-5 mb-0 mx-auto">Tempat Yang Mudah Dijangkau</p>
+                <p>Lokasi wisata yang ada di Ngawi tidaklah jauh dari pusat kota, dan kami akan memastikan untuk selalu menjaga jalan menuju tempat wisata tersebut.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+              <div class="d-flex flex-column gap-2 text-center">
+                <div class="p-3 bg-white rounded-4 mx-auto" style="height: 5rem; width: 5rem;--bs-bg-opacity: .5;">
+                  <img src="./image/feature/shield.png" alt="Keamanan Yang Ketat" class="w-100" />
+                </div>
+                <p class="fw-bold fs-5 mb-0 mx-auto">Keamanan Yang Ketat</p>
+                <p>Kami akan selalu menjaga tempat wisata tersebut dengan mengerahkan tim penjaga dan kepolisian setempat untuk memantau kondisi di area wisata.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Featured End -->
+
+      <!-- Section History Start -->
+      <section id="destination" class="need-space">
+        <div class="container">
+          <div class="text-center w-100 w-md-50 mx-auto">
+            <h3 class="h1">Destinasi Wisata Andalan</h3>
+            <p class="fs-5 opacity-75">
+              Berikut beberapa destinasi andalan warga lokal Kabupaten Ngawi,
+              baik wisata alam maupun wisata sejarah.
+            </p>
+          </div>
+
+          <div class="row pt-4">
+            <div class="col-md-4 pb-3">
+              <div class="card shadow-sm border-0 card-body rounded-4">
+                <img
+                  src="./image/destination/suwono.jpg"
+                  alt="Suwono Indah Park & Waterfall"
+                  class="rounded-3 w-100"
+                />
+
+                <div class="pt-3">
+                  <p class="fw-bold mb-1 fs-5">Suwono Indah Park & Waterfall</p>
+                  <div class="d-flex gap-1 mb-2">
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                  </div>
+                  <p class="mb-0 opacity-75">Ngrambe, Ngawi</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 pb-3">
+              <div class="card shadow-sm border-0 card-body rounded-4">
+                <img
+                  src="./image/destination/ngawioboro-dan-kartonyono.webp"
+                  alt="Ngawioboro & Tugu Kartonyono"
+                  class="rounded-3 w-100"
+                />
+
+                <div class="pt-3">
+                  <p class="fw-bold mb-1 fs-5">Ngawioboro & Tugu Kartonyono</p>
+                  <div class="d-flex gap-1 mb-2">
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                  </div>
+                  <p class="mb-0 opacity-75">
+                    Jl. S. Parman, Margomulyo, Ngawi
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 pb-3">
+              <div class="card shadow-sm border-0 card-body rounded-4">
+                <img
+                  src="./image/destination/pasar-djadoel.jpg"
+                  alt="Pasar Jadul Ahad Legi"
+                  class="rounded-3 w-100"
+                />
+
+                <div class="pt-3">
+                  <p class="fw-bold mb-1 fs-5">Pasar Jadul Ahad Legi</p>
+                  <div class="d-flex gap-1 mb-2">
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                  </div>
+                  <p class="mb-0 opacity-75">Tawun, Kasreman, Ngawi</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 pb-3">
+              <div class="card shadow-sm border-0 card-body rounded-4">
+                <img
+                  src="./image/destination/jamus.jpg"
+                  alt="Kebun Teh Jamus"
+                  class="rounded-3 w-100"
+                />
+
+                <div class="pt-3">
+                  <p class="fw-bold mb-1 fs-5">Kebun Teh Jamus</p>
+                  <div class="d-flex gap-1 mb-2">
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                  </div>
+                  <p class="mb-0 opacity-75">Sine, Ngawi</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 pb-3">
+              <div class="card shadow-sm border-0 card-body rounded-4">
+                <img
+                  src="./image/destination/srambang.jpg"
+                  alt="Air Terjun Srambang"
+                  class="rounded-3 w-100"
+                />
+
+                <div class="pt-3">
+                  <p class="fw-bold mb-1 fs-5">Air Terjun Srambang</p>
+                  <div class="d-flex gap-1 mb-2">
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                  </div>
+                  <p class="mb-0 opacity-75">Jogorogo, Ngawi</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 pb-3">
+              <div class="card shadow-sm border-0 card-body rounded-4">
+                <img
+                  src="./image/destination/benteng-pendem.jpeg"
+                  alt="Benteng Pendem Ngawi"
+                  class="rounded-3 w-100"
+                />
+
+                <div class="pt-3">
+                  <p class="fw-bold mb-1 fs-5">Benteng Pendem Ngawi</p>
+                  <div class="d-flex gap-1 mb-2">
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                    <img src="./image/star.svg" height="16px" alt="Star" />
+                  </div>
+                  <p class="mb-0 opacity-75">
+                    Jl. Diponegoro, Ngawi, Jawa Timur
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section History End -->
+
+      <!-- Footer Creator Start -->
+      <footer class="bg-dark text-white py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-5">
+              <div class="d-flex gap-3">
+                <img src="./image/cakadi190.png" alt="Amir Zuhdi Wibowo" height="72px" class="rounded-pill" />
+                <div>
+                  <p class="fw-bold fs-5 mb-1">Amir Zuhdi Wibowo</p>
+                  <p class="mb-0 opacity-50">Halo Rek! Saya Amir Zuhdi Wibowo yang mana yang membuat website ini. Ikuti saya di sosial media di bawah ini ya suapya saling kenal.</p>
+                </div>
+              </div>
+
+              <div class="d-flex gap-4 justify-content-center mt-3">
+                <a href="https://instagram.com/cakadi190"><img src="./image/social-media/instagram.png" height="32px" alt="Instagram"></a>
+                <a href="https://fb.me/cakadi190"><img src="./image/social-media/facebook.png" height="32px" alt="Facebook"></a>
+                <a href="https://youtube.com/@catatancakadi"><img src="./image/social-media/youtube.png" height="32px" alt="Youtube"></a>
+                <a href="https://t.me/cakadi190"><img src="./image/social-media/telegram.png" height="32px" alt="Telegram"></a>
+                <a href="https://linkedin.com/in/cakadi190"><img src="./image/social-media/linkedin.png" height="32px" alt="Linkedin"></a>
+                <a href="https://wa.me/6281333550746"><img src="./image/social-media/whatsapp.png" height="32px" alt="Whatsapp"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer Creator End -->
+    </div>
+  </body>
+</html>
